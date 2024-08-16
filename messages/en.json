@@ -1,0 +1,28 @@
+{
+  "HomePage": {
+    "greetingTitle": "Hello!",
+    "intro": "My name is Artem Moroz, and I am a frontend engineer with over 10 years of experience in web development, focusing on React applications for the past four years.",
+    "explore": "Here you can explore some of my pet projects, view my certifications, check out my skills and experience, and get to know me better to understand if you are interested in collaborating with me.",
+    "social": "You can also connect with me on GitHub and LinkedIn."
+  },
+  "LanguageSwitcher": {
+    "english": "English",
+    "russian": "Русский",
+    "ukrainian": "Українська"
+  },
+  "Menu": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Projects",
+    "expertise": "Expertise"
+  },
+  "ExpertiseText": {
+    "intro": "In this section, you can learn about the technologies and tools I use in my work.",
+    "experience": "I have been involved in web development for over 10 years. During this time, I have developed and maintained e-commerce websites, gaining extensive experience in web development business logic.",
+    "focus": "In recent years, I have focused on frontend development, particularly with the React library and Next.js framework. My primary stack also includes Redux, Redux Toolkit, Saga, and Thunks for state management, though I also use Mobx in my projects.",
+    "approach": "In development, I pay special attention to application architecture, scalability, and maintenance. I adhere to the principles of separating business logic and UI, which ensures code flexibility and ease of maintenance. I also implement multilingual support and use popular packages and libraries, such as lodash and classnames, to enhance application functionality.",
+    "ongoingLearning": "Technologies and libraries are constantly evolving, so I dedicate my free time to improving my skills and expanding my knowledge. You can view my certificates",
+    "here": "here"
+  }
+}
