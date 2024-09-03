@@ -1,0 +1,27 @@
+.expertise {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+}
+
+.listWrapper {
+  flex: 2;
+}
+
+.imageWrapper {
+  flex: 1;
+}
+
+.heading {
+  color: var(--text-color);
+}
+
+.textBottom {
+  margin-top: var(--chakra-space-4);
+}
+
+.link {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+.heading {
+  color: var(--text-color);
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 100%;
+}

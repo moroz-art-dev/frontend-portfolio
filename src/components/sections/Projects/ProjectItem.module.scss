@@ -1,0 +1,48 @@
+.projectItem {
+  background-color: var(--background-color);
+  border: var(--chakra-borders-1px) var(--border-color);
+  border-radius: var(--chakra-radii-base);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: var(--chakra-space-2) var(--chakra-space-2) 0;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    transform: scale(1.03);
+  }
+}
+
+.projectImage {
+  border-radius: var(--chakra-radii-base);
+  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  img {
+    display: block;
+    height: auto;
+    left: 0;
+    max-height: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.projectContent {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--chakra-space-4);
+  padding-right: 0;
+}
