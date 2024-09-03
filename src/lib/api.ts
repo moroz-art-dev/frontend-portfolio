@@ -1,64 +1,18 @@
-import axios, {AxiosError} from 'axios';
+import {CertificateApiResponse} from '@/types/certificate';
+import {Project, ProjectApiResponse} from '@/types/project';
+import {SkillApiResponse} from '@/types/skill';
+import {fetchData} from '@/utils/fetchData';
 
-// Создаем экземпляр axios с базовым URL
-const api = axios.create({
-  baseURL: 'https://raw.githubusercontent.com/moroz-art-dev/materials/main',
-});
-
-// Функция для проверки, что данные могут быть сериализованы в JSON
-const isValidJSON = (data: any): boolean => {
-  try {
-    JSON.stringify(data);
-    return true;
-  } catch (e) {
-    return false;
-  }
+export const fetchProjectById = async (id: string): Promise<Project | null> => {
+  const projects = await fetchProjects();
+  return projects.list.find((project: Project) => project.id === id) || null;
 };
 
-// Функция для получения сертификатов
-export const fetchCertificates = async () => {
-  try {
-    const response = await api.get('/certificates/data.json');
-    if (!isValidJSON(response.data)) {
-      throw new Error('Invalid JSON format for certificates data');
-    }
-    return response.data;
-  } catch (error) {
-    throw handleError(error as AxiosError);
-  }
-};
+export const fetchCertificates = async (): Promise<CertificateApiResponse> =>
+  fetchData('/certificates/data_v1.json');
 
-// Функция для получения проектов
-export const fetchProjects = async () => {
-  try {
-    const response = await api.get('/projects/data.json');
-    if (!isValidJSON(response.data)) {
-      throw new Error('Invalid JSON format for projects data');
-    }
-    return response.data;
-  } catch (error) {
-    throw handleError(error as AxiosError);
-  }
-};
+export const fetchProjects = async (): Promise<ProjectApiResponse> =>
+  fetchData('/projects/data_v1.json');
 
-// Функция для получения скиллов
-export const fetchSkills = async () => {
-  try {
-    const response = await api.get('/stack/data_v1.json');
-
-    if (!isValidJSON(response.data)) {
-      throw new Error('Invalid JSON format for skills data');
-    }
-    return response.data;
-  } catch (error) {
-    throw handleError(error as AxiosError);
-  }
-};
-
-// Функция для обработки ошибок
-const handleError = (error: AxiosError) => {
-  // Логирование ошибки
-  console.error('API Error:', error.message);
-  // Создаем объект ошибки для проброса
-  return new Error(error.message || 'An unknown error occurred');
-};
+export const fetchSkills = async (): Promise<SkillApiResponse> =>
+  fetchData('/stack/data_v1.json');

@@ -1,13 +1,11 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-css-modules"],
-  "plugins": ["stylelint-scss", "stylelint-order"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-css-modules"],
+  "plugins": ["stylelint-order"],
   "rules": {
-    "indentation": 2,
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]*$",
     "no-descending-specificity": null,
-    "max-empty-lines": 1,
     "block-no-empty": true,
     "color-no-invalid-hex": true,
-    "declaration-colon-space-after": "always",
     "selector-type-no-unknown": [
       true,
       {
@@ -20,8 +18,15 @@
         "ignoreAtRules": ["import"]
       }
     ],
-    "scss/dollar-variable-colon-space-after": "always",
-    "order/order": [["custom-properties", "declarations", "at-rules", "rules"]],
+    "order/order": [
+      "custom-properties",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "import"
+      },
+      "rules"
+    ],
     "order/properties-alphabetical-order": true
   }
 }

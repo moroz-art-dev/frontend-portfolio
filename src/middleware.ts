@@ -11,13 +11,3 @@ export default createMiddleware({
 export const config = {
   matcher: ['/((?!api|_next|.*\\..*).*)'],
 };
-
-// export default createMiddleware({
-//   locales: ['en', 'uk', 'ru'],
-
-//   defaultLocale: 'en',
-// });
-
-// export const config = {
-//   matcher: ['/', '/(de|en)/:path*'],
-// };

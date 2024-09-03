@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:css": "stylelint '**/*.module.scss'",
+    "lint:css:fix": "stylelint '**/*.module.scss' --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -15,11 +18,9 @@
     "@emotion/styled": "^11.13.0",
     "axios": "^1.3.1",
     "classnames": "^2.5.1",
-    "dayjs": "^1.11.12",
     "framer-motion": "^11.3.21",
-    "keen-slider": "^6.8.6",
     "lodash": "^4.17.21",
-    "next": "14.2.5",
+    "next": "^14.2.6",
     "next-intl": "^3.17.2",
     "react": "^18",
     "react-dom": "^18",
@@ -27,7 +28,8 @@
     "react-icons": "^5.2.1",
     "react-query": "^3.39.3",
     "sass": "^1.77.8",
-    "swr": "^2.2.5"
+    "swr": "^2.2.5",
+    "update": "^0.4.2"
   },
   "devDependencies": {
     "@types/node": "^22.2.0",
@@ -44,9 +46,10 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "prettier": "^3.3.3",
-    "stylelint": "^16.8.1",
+    "stylelint": "^16.8.2",
     "stylelint-config-css-modules": "^4.4.0",
     "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.5.0",
     "typescript": "^5"

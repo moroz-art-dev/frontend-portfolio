@@ -39,17 +39,17 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react/prop-types': 'off',
     'import/order': [
       'error',
       {
         groups: [
-          'builtin',
-          'external',
-          'internal',
-          ['sibling', 'parent'],
-          'index',
+          'builtin', // Node.js modules like fs, path
+          'external', // Packages from npm like react, lodash
+          'internal', // Aliased paths like @/components, @/utils
+          ['parent', 'sibling', 'index'], // Relative imports like ../, ./ or index.js
           'object',
-          'type',
+          'type', // Type imports like import type { MyType } from './my-type'
         ],
         'newlines-between': 'always',
         alphabetize: {
@@ -63,11 +63,43 @@ module.exports = {
             position: 'after',
           },
           {
-            pattern: '*.module.scss',
-            group: 'internal',
+            pattern: 'next{,-/**}',
+            group: 'builtin',
             position: 'before',
           },
+          {
+            pattern: 'next/navigation',
+            group: 'builtin',
+            position: 'before',
+          },
+          {
+            pattern: 'next-intl{,-/**}',
+            group: 'external',
+            position: 'after',
+          },
+
+          {
+            pattern: 'next-intl/server',
+            group: 'external',
+            position: 'after',
+          },
+          {
+            pattern: '@chakra-ui/**',
+            group: 'external',
+            position: 'after',
+          },
+          {
+            pattern: './**',
+            group: 'sibling',
+            position: 'before',
+          },
+          {
+            pattern: './**/*.module.scss',
+            group: 'sibling',
+            position: 'after',
+          },
         ],
+        pathGroupsExcludedImportTypes: ['builtin', 'type'],
       },
     ],
     'import/no-unresolved': 'error',

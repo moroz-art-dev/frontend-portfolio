@@ -15,9 +15,13 @@ const nextConfig = {
   },
   trailingSlash: false,
   reactStrictMode: true,
+  images: {
+    domains: ['raw.githubusercontent.com'],
+  },
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,
+      '@assets': path.resolve(__dirname, 'assets'),
       '@components': path.resolve(__dirname, 'components'),
       '@config': path.resolve(__dirname, 'config'),
       '@containers': path.resolve(__dirname, 'containers'),
