@@ -1,0 +1,47 @@
+.buttonGroup {
+  bottom: calc(var(--padding-background) + 0.4em);
+  column-gap: 15px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  left: calc(var(--padding-background) - 0.05em);
+  mix-blend-mode: difference;
+  position: fixed;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.button {
+  align-items: center;
+  background: none;
+  border: none;
+  display: flex;
+  padding: 0;
+  transition: color 0.2s ease;
+
+  svg {
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: inherit;
+    font-size: 80%;
+    margin-right: 5px;
+    text-transform: uppercase;
+  }
+
+  &.active {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: var(--button-hover-color);
+  }
+
+  &:active {
+    color: var(--button-active-color);
+  }
+}

@@ -1,0 +1,18 @@
+/* components/common/MainLoader/MainLoader.module.scss */
+.loaderContainer {
+  align-items: center;
+  background: var(--primary-color);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.canvas {
+  background: transparent;
+  display: block;
+}

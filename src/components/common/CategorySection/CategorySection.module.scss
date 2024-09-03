@@ -1,0 +1,10 @@
+.itemWrap {
+  display: flex;
+
+  .labelText {
+    line-height: 40px;
+    min-height: 40px;
+    min-width: 200px;
+    vertical-align: middle;
+  }
+}

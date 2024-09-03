@@ -1,0 +1,37 @@
+.imageTileContainer {
+  width: 100%;
+}
+
+.imageTileBox {
+  background: var(--background-color);
+  border: var(--chakra-borders-1px) var(--border-color);
+  border-radius: var(--chakra-radii-base);
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: var(--chakra-space-2);
+  position: relative;
+}
+
+.imageModalBox {
+  align-items: center;
+  display: flex;
+  height: auto;
+  margin: auto;
+  max-height: 90%;
+  max-width: 90%;
+  place-content: center center;
+  width: auto;
+}
+
+.imageTitleContent {
+  width: 100%;
+}
+
+.imageTitle {
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

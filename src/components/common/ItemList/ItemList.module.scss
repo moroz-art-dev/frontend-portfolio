@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  border-radius: var(--chakra-radii-md);
+  cursor: pointer;
+  padding: 0 1rem;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.listItem:hover,
+.listItem.active {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}

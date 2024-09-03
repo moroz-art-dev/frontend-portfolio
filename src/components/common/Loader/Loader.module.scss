@@ -1,0 +1,17 @@
+.loaderContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--chakra-space-4);
+  height: 100px;
+  place-content: center flex-start;
+  text-transform: uppercase;
+
+  .spinner {
+    color: var(--accent-color);
+  }
+
+  .text {
+    color: var(--accent-color);
+  }
+}

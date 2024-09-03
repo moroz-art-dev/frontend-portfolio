@@ -1,0 +1,19 @@
+.menuItem {
+  align-items: center;
+  display: flex;
+  font-weight: 400;
+  margin: 0 1rem;
+  place-content: center flex-end;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color 0.7s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.active {
+    color: var(--link-color);
+    cursor: default;
+  }
+}

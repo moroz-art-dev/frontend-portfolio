@@ -1,0 +1,20 @@
+.menuButton {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  min-width: 80px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.menuItem {
+  color: var(--text-color);
+  font-size: 1rem;
+  min-width: 80px;
+
+  &:hover {
+    background-color: var(--menu-hover);
+  }
+}

@@ -1,0 +1,15 @@
+.tag {
+  background: var(--accent-color) !important;
+  color: var(--text-color) !important;
+  margin-bottom: var(--chakra-space-4);
+  margin-right: var(--chakra-space-4);
+  padding: var(--chakra-space-2) var(--chakra-space-4);
+
+  .tagLabel {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    min-height: 24px;
+    vertical-align: middle;
+  }
+}

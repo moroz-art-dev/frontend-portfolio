@@ -1,0 +1,12 @@
+.menuItem {
+  color: var(--text-color);
+  font-size: 1.125rem;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  &.active {
+    color: var(--link-color);
+  }
+}
