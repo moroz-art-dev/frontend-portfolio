@@ -1,0 +1,18 @@
+.page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.lazyLoadBlock {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  margin-bottom: 20px;
+  min-height: 100vh;
+  padding: 10px;
+  width: 100%;
+}

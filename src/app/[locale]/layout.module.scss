@@ -1,0 +1,25 @@
+.app {
+  background-color: var(--header-background);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .main {
+    height: calc(100% - var(--height-header));
+    max-height: calc(100% - var(--height-header));
+    opacity: 0;
+    overflow-y: auto;
+    padding: var(--padding-background) 0;
+    transition:
+      opacity 0.5s ease-in-out,
+      transform 0.5s ease-in-out;
+
+    .container {
+      height: auto;
+    }
+  }
+}
