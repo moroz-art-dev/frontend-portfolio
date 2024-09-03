@@ -6,9 +6,9 @@ import CategorySection from '@components/common/CategorySection';
 
 import styles from './Skills.module.scss';
 
-import type {SkillsProps} from '@/types/skill';
+import type {SkillApiResponse} from '@/types/skill';
 
-const Skills: React.FC<SkillsProps> = ({list}) => {
+const Skills: React.FC<SkillApiResponse> = ({list}) => {
   return (
     <Box className={styles.skills} mt={8}>
       {Object.entries(list).map(([category, subcategories]) => (

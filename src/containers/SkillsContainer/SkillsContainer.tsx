@@ -5,7 +5,6 @@ import React from 'react';
 import Loader from '@components/common/Loader';
 import Skills from '@components/sections/Skills';
 import {useApiData} from '@hooks/useApiData';
-import {transformSkillsArrayToObject} from '@utils/transformSkills';
 
 import {SkillApiResponse} from '@/types/skill';
 
@@ -16,9 +15,10 @@ const SkillsContainer: React.FC = () => {
 
   if (error) return <div>Error: {error}</div>;
 
-  if (!data || data.list.length === 0) return <div>No skills available</div>;
-  const transformedSkills = transformSkillsArrayToObject(data.list);
-  return <Skills list={transformedSkills} title={data.title} />;
+  if (!data) return <div>No skills available</div>;
+
+  console.log('data.list', data.list);
+  return <Skills list={data.list} title={data.title} />;
 };
 
 export default SkillsContainer;
