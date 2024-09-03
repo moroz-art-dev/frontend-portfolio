@@ -5,12 +5,6 @@ import {
   fetchSkills,
 } from './api';
 
-type ApiFunctionParams =
-  | {
-      [key: string]: string | number | boolean | undefined;
-    }
-  | undefined;
-
 type ApiFunction =
   | typeof fetchCertificates
   | typeof fetchProjects

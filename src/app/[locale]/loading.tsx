@@ -1,5 +1,5 @@
 import Loader from '@components/common/Loader';
 
 export default function Loading() {
-  return <Loader text='Loading project details...' />;
+  return <Loader text='Loading details...' />;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {useLocale, useTranslations} from 'next-intl';
+import {useLocale} from 'next-intl';
 
 import {Box, Divider, Heading} from '@chakra-ui/react';
 
@@ -12,7 +12,6 @@ import type {CertificateApiResponse} from '@/types/certificate';
 import type {Locale} from '@/types/locale';
 
 const Certificates: React.FC<CertificateApiResponse> = ({list, title}) => {
-  const t = useTranslations('ExpertiseText');
   const locale = useLocale() as Locale;
 
   const images = list.map(item => ({
@@ -26,7 +25,6 @@ const Certificates: React.FC<CertificateApiResponse> = ({list, title}) => {
   return (
     <Box as='section' id='certificates'>
       <Heading as='h1' size='xl'>
-        {t('title')}
         {title[locale]}
       </Heading>
       <Divider />

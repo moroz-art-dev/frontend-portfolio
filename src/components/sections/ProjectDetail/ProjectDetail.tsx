@@ -12,7 +12,6 @@ import ProjectImages from './ProjectImages';
 import type {Locale} from '@/types/locale';
 
 const ProjectDetail: React.FC<Project> = ({
-  //projectId,
   imagesSrc,
   imagesSubcategorySrc,
   demo,
