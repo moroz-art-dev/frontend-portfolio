@@ -1,9 +1,9 @@
 {
   "HomePage": {
-    "greetingTitle": "Hello!",
+    "greetingTitle": "Hi, everyone!",
     "intro": "My name is Artem Moroz, and I am a frontend engineer with over 10 years of experience in web development, focusing on React applications for the past four years.",
     "explore": "Here you can explore some of my pet projects, view my certifications, check out my skills and experience, and get to know me better to understand if you are interested in collaborating with me.",
-    "social": "You can also connect with me on GitHub and LinkedIn."
+    "social": "You can also connect with me on Telegram and LinkedIn."
   },
   "LanguageSwitcher": {
     "english": "English",
@@ -15,14 +15,40 @@
     "about": "About",
     "contact": "Contact",
     "projects": "Projects",
-    "expertise": "Expertise"
+    "technologies": "Technologies",
+    "certificates": "Certificates"
   },
   "ExpertiseText": {
+    "title": "My Technical Foundation",
     "intro": "In this section, you can learn about the technologies and tools I use in my work.",
     "experience": "I have been involved in web development for over 10 years. During this time, I have developed and maintained e-commerce websites, gaining extensive experience in web development business logic.",
     "focus": "In recent years, I have focused on frontend development, particularly with the React library and Next.js framework. My primary stack also includes Redux, Redux Toolkit, Saga, and Thunks for state management, though I also use Mobx in my projects.",
     "approach": "In development, I pay special attention to application architecture, scalability, and maintenance. I adhere to the principles of separating business logic and UI, which ensures code flexibility and ease of maintenance. I also implement multilingual support and use popular packages and libraries, such as lodash and classnames, to enhance application functionality.",
     "ongoingLearning": "Technologies and libraries are constantly evolving, so I dedicate my free time to improving my skills and expanding my knowledge. You can view my certificates",
-    "here": "here"
+    "here": "here",
+    "list": "My Skills and Technologies"
+  },
+  "Loader": {
+    "default": "Loading...",
+    "loadingProjects": "Loading...",
+    "loadingSkills": "Loading..."
+  },
+  "ProjectsText": {
+    "titlePet": "Practical Projects",
+    "intro": "I have many years of experience in commercial development, where I have gained deep knowledge and skills in creating modern web solutions. Early in my career, I worked at Step2use, where my main task was to develop e-commerce websites. This formed the foundation for my transition to more complex web applications and innovative products.",
+    "experience": "I have experience working in a large team on the MaxiBlocks product, where we developed a block builder plugin for WordPress. I also worked at GetWin on the prof.world product — a large, evolving project that will become a portal for companies engaged in candidate management.",
+    "support": "From time to time, I also take on small tasks and provide support for older projects, ensuring their stability and relevance.",
+    "petProjects": "Below you can explore some of my pet projects that were built from scratch. In these projects, I actively study and test new technologies and approaches, demonstrating my technical skills and innovative mindset."
+  },
+  "ProjectText": {
+    "technologies": "Technologies",
+    "screenshots": "Screenshots",
+    "links": "Links"
+  },
+  "Contact": {
+    "greetingTitle": "Contact",
+    "intro": "I am always open to new opportunities, interesting projects, and mutually beneficial collaborations. If you have ideas, proposals, or simply want to chat about web development, feel free to reach out!",
+    "emailLabel": "Email",
+    "social": "You can also find me on the following platforms:"
   }
 }
