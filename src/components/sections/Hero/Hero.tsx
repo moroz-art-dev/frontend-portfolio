@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             className={styles.avatar}
             size={{base: '3xl', md: '3xl', lg: '3xl'}}
             name='Artem Moroz'
-            src='/images/person.jpg'
+            src='/images/person.png'
           />
         </Box>
       </GridItem>

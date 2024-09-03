@@ -8,6 +8,7 @@ import {
   Heading,
   HStack,
   IconButton,
+  Image,
   Link,
   Text,
   Tooltip,
@@ -28,7 +29,7 @@ const Contact: React.FC = () => {
       </Heading>
       <Divider />
       <Grid
-        templateColumns={['1fr', '1fr']}
+        templateColumns={['1fr', '1fr 1fr']}
         gap={6}
         className={styles.container}
       >
@@ -61,15 +62,15 @@ const Contact: React.FC = () => {
           </VStack>
         </GridItem>
         {/* Правая колонка для изображения */}
-        {/* <GridItem>
+        <GridItem>
           <Image
-            width={400}
-            height={200}
-            src='/images/contact.jpg'
+            width={300}
+            height={300}
+            src='/images/person.jpg'
             alt='Profile Image'
             className={styles.image}
           />
-        </GridItem> */}
+        </GridItem>
       </Grid>
     </Box>
   );
