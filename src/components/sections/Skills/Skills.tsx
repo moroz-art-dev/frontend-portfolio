@@ -6,13 +6,7 @@ import CategorySection from '@components/common/CategorySection';
 
 import styles from './Skills.module.scss';
 
-interface SkillsProps {
-  list: {
-    [category: string]: {
-      [subcategory: string]: string | {[skillName: string]: string};
-    };
-  };
-}
+import type {SkillsProps} from '@/types/skill';
 
 const Skills: React.FC<SkillsProps> = ({list}) => {
   return (

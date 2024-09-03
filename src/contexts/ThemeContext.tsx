@@ -1,6 +1,5 @@
 'use client';
-
-import {NextPageContext} from 'next';
+import {GetServerSidePropsContext} from 'next';
 
 import {ReactNode} from 'react';
 
@@ -11,7 +10,6 @@ import {
 } from '@chakra-ui/react';
 
 import {useCustomTheme} from '@hooks/useCustomTheme';
-//import theme from '@styles/theme';
 
 interface ThemeProviderProps {
   cookies?: string;
@@ -31,14 +29,6 @@ export function ThemeProvider({cookies, children}: ThemeProviderProps) {
       {children}
     </ChakraProvider>
   );
-}
-
-interface GetServerSidePropsContext extends NextPageContext {
-  req: {
-    headers: {
-      cookie?: string;
-    };
-  };
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
