@@ -6,6 +6,7 @@ import {Box} from '@chakra-ui/react';
 import LazyLoadBlock from '@components/common/LazyLoadBlock';
 import Loader from '@components/common/Loader';
 import Expertise from '@components/sections/Expertise';
+import {useMetaData} from '@hooks/useMetaData';
 
 import styles from './ExpertisePage.module.scss';
 
@@ -26,6 +27,7 @@ const SkillsContainer = dynamic(() => import('@containers/SkillsContainer'), {
 });
 
 function ExpertisePage() {
+  useMetaData('ExpertiseText');
   return (
     <Box className={styles.page}>
       <LazyLoadBlock>

@@ -3,7 +3,9 @@
     "greetingTitle": "Hi, everyone!",
     "intro": "My name is Artem Moroz, and I am a frontend engineer with over 10 years of experience in web development, focusing on React applications for the past four years.",
     "explore": "Here you can explore some of my pet projects, view my certifications, check out my skills and experience, and get to know me better to understand if you are interested in collaborating with me.",
-    "social": "You can also connect with me on Telegram and LinkedIn."
+    "social": "You can also connect with me on Telegram and LinkedIn.",
+    "metaTitle": "Home Page",
+    "metaDescription": "Learn more about a frontend engineer with over 10 years of web development experience."
   },
   "LanguageSwitcher": {
     "english": "English",
@@ -26,7 +28,9 @@
     "approach": "In development, I pay special attention to application architecture, scalability, and maintenance. I adhere to the principles of separating business logic and UI, which ensures code flexibility and ease of maintenance. I also implement multilingual support and use popular packages and libraries, such as lodash and classnames, to enhance application functionality.",
     "ongoingLearning": "Technologies and libraries are constantly evolving, so I dedicate my free time to improving my skills and expanding my knowledge. You can view my certificates",
     "here": "here",
-    "list": "My Skills and Technologies"
+    "list": "My Skills and Technologies",
+    "metaTitle": "My Technical Expertise",
+    "metaDescription": "Discover the technologies and tools used by a frontend engineer."
   },
   "Loader": {
     "default": "Loading...",
@@ -38,17 +42,27 @@
     "intro": "I have many years of experience in commercial development, where I have gained deep knowledge and skills in creating modern web solutions. Early in my career, I worked at Step2use, where my main task was to develop e-commerce websites. This formed the foundation for my transition to more complex web applications and innovative products.",
     "experience": "I have experience working in a large team on the MaxiBlocks product, where we developed a block builder plugin for WordPress. I also worked at GetWin on the prof.world product — a large, evolving project that will become a portal for companies engaged in candidate management.",
     "support": "From time to time, I also take on small tasks and provide support for older projects, ensuring their stability and relevance.",
-    "petProjects": "Below you can explore some of my pet projects that were built from scratch. In these projects, I actively study and test new technologies and approaches, demonstrating my technical skills and innovative mindset."
+    "petProjects": "Below you can explore some of my pet projects that were built from scratch. In these projects, I actively study and test new technologies and approaches, demonstrating my technical skills and innovative mindset.",
+    "metaTitle": "Projects",
+    "metaDescription": "Explore projects that showcase technical skills and innovative approaches."
   },
   "ProjectText": {
     "technologies": "Technologies",
     "screenshots": "Screenshots",
-    "links": "Links"
+    "links": "Links",
+    "metaTitle": "Project Details",
+    "metaDescription": "Learn more about the technologies and screenshots of this project."
   },
   "Contact": {
     "greetingTitle": "Contact",
     "intro": "I am always open to new opportunities, interesting projects, and mutually beneficial collaborations. If you have ideas, proposals, or simply want to chat about web development, feel free to reach out!",
     "emailLabel": "Email",
-    "social": "You can also find me on the following platforms:"
+    "social": "You can also find me on the following platforms:",
+    "metaTitle": "Contact",
+    "metaDescription": "Get in touch to discuss collaboration opportunities and new projects."
+  },
+  "Certificates": {
+    "metaTitle": "Certificates",
+    "metaDescription": "Explore my certificates that validate professional skills and competencies."
   }
 }

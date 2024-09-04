@@ -17,7 +17,6 @@ const SkillsContainer: React.FC = () => {
 
   if (!data) return <div>No skills available</div>;
 
-  console.log('data.list', data.list);
   return <Skills list={data.list} title={data.title} />;
 };
 
