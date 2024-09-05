@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Portfolio
 
-## Getting Started
+This is a personal portfolio project showcasing frontend development skills, technologies, and pet projects. The application is built using modern frontend technologies and includes a variety of features aimed at demonstrating both business logic handling and user interface development.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Pages**: The application contains the following pages:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - **Welcome**: A homepage introducing the portfolio and developer.
+  - **Projects**: A detailed showcase of completed projects.
+  - **Technologies**: An overview of the technologies and tools used.
+  - **Certificates**: A page listing professional certificates.
+  - **Contacts**: A page for reaching out with contact information.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Theme Toggle**: The app includes a light/dark mode switcher to allow users to toggle between themes.
+- **Language Selection**: Supports multiple languages (English, Ukrainian, Russian) with a language switcher available in the UI.
+- **Responsive Design**: Fully responsive layout using Chakra UI.
+- **Separation of Concerns**: The application follows best practices by separating business logic and UI components, ensuring scalability and maintainability.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Project Structure
 
-## Learn More
+The project is organized into the following folders:
 
-To learn more about Next.js, take a look at the following resources:
+- **/app**:
+  Contains core application files, including locale-based pages and API routes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **/assets**:
+  Stores static assets like images that are used throughout the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **/components**:
+  Contains reusable React components, organized into several categories:
 
-## Deploy on Vercel
+  - **common**: Shared components used throughout the application.
+  - **layout**: Components related to page layout and structure.
+  - **sections**: Components representing different sections of the website.
+  - **ui**: Small UI components like buttons and form elements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **/config**:  
+  Stores configuration files, such as constants for language settings, menus, and social media.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **/containers**:  
+  Contains container components that manage the business logic of the application. These components handle data fetching, state management, and interaction with APIs, then pass the data down to presentational components.
+
+- **/contexts**:  
+  Contains React Context files that manage global states such as theme settings, font preferences, and language selection. These contexts help in providing shared functionality throughout the app.
+
+- **/hooks**:  
+  Custom React hooks that encapsulate reusable logic, such as fetching API data, managing themes, and rotating content.
+
+- **/lib**:  
+  Utility libraries and modules that provide reusable functions for API calls and other common tasks.
+
+- **/styles**:  
+  Contains all the styling-related files, including theme configuration, global styles, and component-specific styles written in SCSS.
+
+- **/types**:  
+  TypeScript type definitions for the data structures used throughout the application.
+
+- **/utils**:  
+  Utility functions that provide common operations, such as managing local storage, fetching API data, and generating meta tags for SEO purposes.
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/moroz-art-dev/frontend-portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd frontend-portfolio
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
+
+## Technologies Used
+
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Strongly typed programming language that builds on JavaScript.
+- **Chakra UI**: A modular and accessible component library.
+- **Sass**: CSS preprocessor for styling.
+- **Lodash**: Utility library for simplifying common programming tasks.
+- **i18next**: Internationalization library for managing translations.
+- **Axios**: Promise-based HTTP client for making API requests.
+- **React Query**: Library for fetching, caching, and updating server data in React applications.
+- **Framer Motion**: Library for animations in React.
+- **Stylelint**: Linter for CSS and SCSS to ensure consistent code style.
+
+## Demo
+
+Check out the live version of the project here: [Live Demo](https://github.com/moroz-art-dev/frontend-portfolio)
+
+## Screenshots
+
+![Image 1](screenshots/screenshot_1.png)
+![Image 2](screenshots/screenshot_2.png)
+![Image 3](screenshots/screenshot_3.png)
+
+## License
+
+This project is licensed under the MIT License.
