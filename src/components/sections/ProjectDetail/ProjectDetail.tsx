@@ -16,6 +16,7 @@ const ProjectDetail: React.FC<Project> = ({
   imagesSubcategorySrc,
   demo,
   title,
+  feature,
   url,
   description,
   technologies,
@@ -34,6 +35,7 @@ const ProjectDetail: React.FC<Project> = ({
         url={url}
         title={title[locale]}
         description={description[locale]}
+        feature={feature[locale]}
         technologies={technologies}
       />
       <Heading as='h2' size='lg'>

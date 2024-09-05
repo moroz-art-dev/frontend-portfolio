@@ -38,7 +38,7 @@
     "loadingSkills": "Loading..."
   },
   "ProjectsText": {
-    "titlePet": "Practical Projects",
+    "titlePet": "Development Projects",
     "intro": "I have many years of experience in commercial development, where I have gained deep knowledge and skills in creating modern web solutions. Early in my career, I worked at Step2use, where my main task was to develop e-commerce websites. This formed the foundation for my transition to more complex web applications and innovative products.",
     "experience": "I have experience working in a large team on the MaxiBlocks product, where we developed a block builder plugin for WordPress. I also worked at GetWin on the prof.world product — a large, evolving project that will become a portal for companies engaged in candidate management.",
     "support": "From time to time, I also take on small tasks and provide support for older projects, ensuring their stability and relevance.",
@@ -47,6 +47,7 @@
     "metaDescription": "Explore projects that showcase technical skills and innovative approaches."
   },
   "ProjectText": {
+    "features": "Features",
     "technologies": "Technologies",
     "screenshots": "Screenshots",
     "links": "Links",

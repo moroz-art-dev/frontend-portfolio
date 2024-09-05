@@ -13,6 +13,7 @@ export interface ProjectBase {
 export interface Project extends ProjectBase {
   title: Translations;
   description: Translations;
+  feature: Translations;
   technologies: string[];
   imagesSubcategorySrc: string;
   imagesSrc: string[];
@@ -20,7 +21,8 @@ export interface Project extends ProjectBase {
 
 export interface ProjectItemProps extends ProjectBase {
   title: string;
-  description: string;
+  description?: string;
+  feature?: string;
   imageSrc: string;
 }
 

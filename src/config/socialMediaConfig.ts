@@ -1,4 +1,7 @@
-import {FaEnvelope, FaGithub, FaLinkedin, FaTelegram} from 'react-icons/fa';
+import {FaEnvelope, FaTelegramPlane} from 'react-icons/fa';
+import {FaLinkedinIn} from 'react-icons/fa6';
+import {FiGithub} from 'react-icons/fi';
+import {MdOutlineDescription} from 'react-icons/md';
 import {SiCodewars, SiCoursera} from 'react-icons/si';
 
 export const socialMediaLinks = [
@@ -11,20 +14,26 @@ export const socialMediaLinks = [
   {
     href: 'https://linkedin.com/in/moroz-art-dev',
     ariaLabel: 'LinkedIn',
-    icon: FaLinkedin,
+    icon: FaLinkedinIn,
     text: 'linkedin.com/in/moroz-art-dev',
   },
   {
     href: 'https://t.me/ArtDecember',
     ariaLabel: 'Telegram',
-    icon: FaTelegram,
+    icon: FaTelegramPlane,
     text: '@ArtDecember',
   },
   {
     href: 'https://github.com/moroz-art-dev',
     ariaLabel: 'Github',
-    icon: FaGithub,
+    icon: FiGithub,
     text: 'github.com/moroz-art-dev',
+  },
+  {
+    href: 'https://raw.githubusercontent.com/moroz-art-dev/materials/main/cv/CV_Artem_Moroz.pdf',
+    ariaLabel: 'CV',
+    icon: MdOutlineDescription,
+    text: 'CV_Artem_Moroz.pdf',
   },
 ];
 

@@ -40,7 +40,6 @@ const Projects: React.FC<ProjectApiResponse> = ({title, list}) => {
                 id={project.id}
                 key={project.id}
                 title={project.title[locale]}
-                description={project.description[locale]}
                 imageSrc={`${IMAGE_BASE_URL}${project.imagesSubcategorySrc}${project.imagesSrc[0]}`}
               />
             ))}

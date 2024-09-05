@@ -12,12 +12,14 @@ interface ProjectHeaderProps {
   demo: string;
   url: string;
   description: string;
+  feature: string;
   technologies: string[];
 }
 
 const ProjectHeader: React.FC<ProjectHeaderProps> = ({
   title,
   description,
+  feature,
   url,
   demo,
   technologies,
@@ -35,6 +37,13 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
       <VStack align='start' gap={0}>
         <Text fontSize='lg' className={styles.description} mb={8}>
           {description}
+        </Text>
+        <Heading as='h2' size='lg' className={styles.heading}>
+          {t('features')}:
+        </Heading>
+        <Divider mb={8} />
+        <Text fontSize='lg' className={styles.feature} mb={8}>
+          {feature}
         </Text>
         <Heading as='h2' size='lg' className={styles.heading}>
           {t('technologies')}:

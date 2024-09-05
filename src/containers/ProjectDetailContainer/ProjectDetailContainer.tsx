@@ -20,6 +20,7 @@ const ProjectDetailContainer: React.FC<ProjectDetailContainerProps> = ({
     title,
     url,
     description,
+    feature,
     technologies,
   } = project;
 
@@ -32,6 +33,7 @@ const ProjectDetailContainer: React.FC<ProjectDetailContainerProps> = ({
       title={title}
       url={url}
       description={description}
+      feature={feature}
       technologies={technologies}
     />
   );
