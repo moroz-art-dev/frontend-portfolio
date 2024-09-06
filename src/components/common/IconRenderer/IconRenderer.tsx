@@ -5,7 +5,8 @@ import getIcon from '@utils/iconMap';
 
 const IconRenderer: React.FC<{
   name: string;
-}> = ({name}) => {
-  return getIcon(name, IMAGE_BASE_URL);
+  size?: number;
+}> = ({name, size}) => {
+  return getIcon(name, IMAGE_BASE_URL, size);
 };
 export default IconRenderer;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {useLocale} from 'next-intl';
 
-import {Box, Divider, Heading} from '@chakra-ui/react';
+import {Container, Divider, Heading} from '@chakra-ui/react';
 
 import {IMAGE_BASE_URL, IMAGE_CERTIFICATES_URL} from '@config/constants';
 
@@ -23,13 +23,13 @@ const Certificates: React.FC<CertificateApiResponse> = ({list, title}) => {
   }));
 
   return (
-    <Box as='section' id='certificates'>
+    <Container as='section'>
       <Heading as='h1' size='xl'>
         {title[locale]}
       </Heading>
       <Divider />
       <CertificatesImages images={images} />
-    </Box>
+    </Container>
   );
 };
 

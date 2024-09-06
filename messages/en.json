@@ -4,6 +4,9 @@
     "intro": "My name is Artem Moroz, and I am a frontend engineer with over 10 years of experience in web development, focusing on React applications for the past four years.",
     "explore": "Here you can explore some of my pet projects, view my certifications, check out my skills and experience, and get to know me better to understand if you are interested in collaborating with me.",
     "social": "You can also connect with me on Telegram and LinkedIn.",
+    "skillsTitle": "Main Stack",
+    "skillsIntro": "I specialize in frontend development, primarily working with React, Next.js, Redux, JavaScript, and TypeScript. Over the years, I’ve refined my approach to building applications, focusing on modularity, scalability, and efficient separation of logic and components.",
+    "skillsExplore": "My projects reflect this structured methodology, ensuring they are maintainable, adaptable, and built with long-term growth in mind. You can explore my dev projects, certifications, and skills here.",
     "metaTitle": "Home Page",
     "metaDescription": "Learn more about a frontend engineer with over 10 years of web development experience."
   },
@@ -65,5 +68,12 @@
   "Certificates": {
     "metaTitle": "Certificates",
     "metaDescription": "Explore my certificates that validate professional skills and competencies."
+  },
+  "Skills": {
+    "reactDescription": "Building interactive UI with React.",
+    "jsDescription": "The foundation of modern web development.",
+    "tsDescription": "Adding types to JavaScript for robust apps.",
+    "reduxDescription": "State management with Redux.",
+    "nextDescription": "Server-side rendering and static site generation with Next.js."
   }
 }

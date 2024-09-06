@@ -30,14 +30,14 @@ export const Button = {
       },
     },
     solid: {
-      color: 'var(--accent-color)',
+      color: 'var(--button-color)',
       bg: 'var(--link-color)',
       _hover: {
-        color: 'var(--accent-hover-color)',
+        color: 'var(--button-hover-color)',
         bg: 'var(--link-hover-color)',
       },
       _active: {
-        color: 'var(--accent-active-color)',
+        color: 'var(--button-active-color)',
         bg: 'var(--link-hover-color)',
       },
     },

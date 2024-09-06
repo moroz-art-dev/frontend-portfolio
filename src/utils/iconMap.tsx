@@ -83,17 +83,22 @@ const reactIconMap: {[key: string]: React.ReactNode} = {
   Certificate: <FaCertificate />,
 };
 
-const getIcon = (techName: string, imageBaseUrl: string): React.ReactNode => {
+const getIcon = (
+  techName: string,
+  imageBaseUrl: string,
+  size?: number
+): React.ReactNode => {
   const iconPath = getIconPath(techName, imageBaseUrl);
+  const defaultSize = size || 24;
 
   if (iconPath) {
     return (
       <Image
-        style={{fontSize: 24}}
+        style={{fontSize: defaultSize}}
         src={iconPath}
         alt={techName}
-        width={24}
-        height={24}
+        width={defaultSize}
+        height={defaultSize}
       />
     );
   }

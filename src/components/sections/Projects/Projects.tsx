@@ -1,6 +1,6 @@
 import {useLocale, useTranslations} from 'next-intl';
 
-import {Box, Divider, Grid, Heading, VStack} from '@chakra-ui/react';
+import {Container, Divider, Grid, Heading, VStack} from '@chakra-ui/react';
 
 import {IMAGE_BASE_URL} from '@config/constants';
 
@@ -15,7 +15,7 @@ const Projects: React.FC<ProjectApiResponse> = ({title, list}) => {
   const locale = useLocale() as Locale;
   const t = useTranslations('ProjectsText');
   return (
-    <Box as='section' className={styles.projects} id='projects'>
+    <Container as='section' className={styles.projects}>
       <Heading as='h1' className={styles.heading}>
         {title[locale]}
       </Heading>
@@ -45,7 +45,7 @@ const Projects: React.FC<ProjectApiResponse> = ({title, list}) => {
             ))}
         </Grid>
       </VStack>
-    </Box>
+    </Container>
   );
 };
 

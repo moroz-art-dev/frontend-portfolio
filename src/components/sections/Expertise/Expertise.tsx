@@ -2,7 +2,15 @@ import React from 'react';
 
 import {useTranslations} from 'next-intl';
 
-import {Box, Divider, Flex, Heading, Text, VStack} from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Divider,
+  Flex,
+  Heading,
+  Text,
+  VStack,
+} from '@chakra-ui/react';
 
 import ImageDisplay from '@components/common/ImageDisplay';
 
@@ -16,7 +24,7 @@ const Expertise: React.FC<CertificateApiResponse> = ({list}) => {
   const t = useTranslations('ExpertiseText');
 
   return (
-    <Box as='section' className={styles.expertise} id='certificates'>
+    <Container as='section' className={styles.expertise}>
       <Heading as='h1' size='xl' className={styles.heading}>
         {t('title')}
       </Heading>
@@ -51,7 +59,7 @@ const Expertise: React.FC<CertificateApiResponse> = ({list}) => {
         {t('list')}
       </Heading>
       <Divider />
-    </Box>
+    </Container>
   );
 };
 

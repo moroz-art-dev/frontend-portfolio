@@ -1,6 +1,6 @@
 import {cookies} from 'next/headers';
 
-import {Box, ColorModeScript, Container} from '@chakra-ui/react';
+import {Box, ColorModeScript} from '@chakra-ui/react';
 
 import Footer from '@components/layout/Footer';
 import Header from '@components/layout/Header';
@@ -32,9 +32,7 @@ function RootLayout({children}: RootLayoutProps) {
           <ColorModeScript initialColorMode={config.initialColorMode} />
           <Box className={styles.app}>
             <Header />
-            <main className={styles.main}>
-              <Container className={styles.container}>{children}</Container>
-            </main>
+            <main className={styles.main}>{children}</main>
             <Footer />
           </Box>
         </Providers>

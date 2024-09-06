@@ -1,7 +1,7 @@
 import {useTranslations} from 'next-intl';
 
 import {
-  Box,
+  Container,
   Divider,
   Grid,
   GridItem,
@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
   const t = useTranslations('Contact');
 
   return (
-    <Box as='section' className={styles.contact} id='contact'>
+    <Container as='section' className={styles.contact}>
       <Heading as='h1' className={styles.heading}>
         {t('greetingTitle')}
       </Heading>
@@ -32,11 +32,9 @@ const Contact: React.FC = () => {
         gap={6}
         className={styles.container}
       >
-        {/* Левая колонка для текста */}
         <GridItem>
           <VStack align='start' spacing={4}>
             <Text className={styles.text}>{t('intro')}</Text>
-            {/* Используем текст из констант */}
             {socialMediaLinks.map(
               ({href, ariaLabel, icon: Icon, text}, index) => (
                 <HStack key={index} spacing={2}>
@@ -60,7 +58,6 @@ const Contact: React.FC = () => {
             )}
           </VStack>
         </GridItem>
-        {/* Правая колонка для изображения */}
         {/* <GridItem>
           <Image
             width={300}
@@ -71,7 +68,7 @@ const Contact: React.FC = () => {
           />
         </GridItem> */}
       </Grid>
-    </Box>
+    </Container>
   );
 };
 

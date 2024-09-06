@@ -11,7 +11,7 @@ const ThemeSwitcher: React.FC = () => {
       }
       icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
       onClick={toggleColorMode}
-      mr={4}
+      style={{padding: '0 1rem'}}
       variant='ghost'
     />
   );

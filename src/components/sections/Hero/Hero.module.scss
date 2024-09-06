@@ -1,8 +1,15 @@
 .text {
-  text-align: left;
+  text-align: justify;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 .avatarWrapper {
+  align-items: center;
   display: inline-block;
   position: relative;
 }
@@ -12,37 +19,37 @@
   z-index: 1;
 }
 
-.avatar::before {
-  animation: rotateShadow 4s linear infinite;
-  background: conic-gradient(
-    from 0deg,
-    var(--accent-color),
-    var(--accent-active-color),
-    var(--accent-color)
-  );
-  border-radius: 50%;
-  content: '';
-  filter: blur(2px);
-  height: calc(100% + 10px);
-  left: -5px;
-  position: absolute;
-  top: -5px;
-  width: calc(100% + 10px);
-  z-index: -1;
-}
+// .avatar::before {
+//   animation: rotateShadow 4s linear infinite;
+//   background: conic-gradient(
+//     from 0deg,
+//     var(--accent-color),
+//     var(--accent-active-color),
+//     var(--accent-color)
+//   );
+//   border-radius: 50%;
+//   content: '';
+//   filter: blur(2px);
+//   height: calc(100% + 10px);
+//   left: -5px;
+//   position: absolute;
+//   top: -5px;
+//   width: calc(100% + 10px);
+//   z-index: -1;
+// }
 
-@media (width <= 768px) {
-  .avatar::before {
-    animation: none;
-  }
-}
+// @media (width <= 768px) {
+//   .avatar::before {
+//     animation: none;
+//   }
+// }
 
-@keyframes rotateShadow {
-  0% {
-    transform: rotate(0deg);
-  }
+// @keyframes rotateShadow {
+//   0% {
+//     transform: rotate(0deg);
+//   }
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }

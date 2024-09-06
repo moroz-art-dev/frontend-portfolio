@@ -17,6 +17,7 @@ const SocialMediaIcons = () => {
             icon={<Icon />}
             className={styles.iconButton}
             target='_blank'
+            borderRadius='50%'
           />
         </Tooltip>
       ))}

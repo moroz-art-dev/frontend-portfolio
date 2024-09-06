@@ -19,6 +19,8 @@ export const lightPalette = {
     shadow: 'rgba(0, 0, 0, 0.1)',
     headerShadow:
       '0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05)',
+    info: 'rgba(135, 206, 235, 0.5)',
+    infoHover: 'rgba(107, 181, 219, 0.5)',
   },
 };
 
@@ -43,5 +45,7 @@ export const darkPalette = {
     shadow: 'rgba(0, 0, 0, 0.5)',
     headerShadow:
       '0 4px 8px rgba(255, 255, 255, 0.05), 0 8px 16px rgba(255, 255, 255, 0.03)',
+    info: 'rgba(135, 206, 235, 0.5)',
+    infoHover: 'rgba(107, 181, 219, 0.5)',
   },
 };

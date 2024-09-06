@@ -25,6 +25,8 @@ export const useCustomTheme = () => {
   const {headingFont, bodyFont, specialFont, alternateFont, codeFont} =
     useFont();
 
+  console.log('t', headingFont);
+
   const customTheme = extendTheme({
     config,
     colors: {
@@ -54,6 +56,8 @@ export const useCustomTheme = () => {
             '--accent-color': currentColors.accent,
             '--accent-hover-color': currentColors.accentHover,
             '--accent-active-color': currentColors.accentActive,
+            '--info-color': currentColors.info,
+            '--info-hover-color': currentColors.infoHover,
             '--background-color': currentColors.background,
             '--text-color': currentColors.text,
             '--button-color': currentColors.button,

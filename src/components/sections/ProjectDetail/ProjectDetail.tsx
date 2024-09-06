@@ -1,6 +1,6 @@
 import {useLocale, useTranslations} from 'next-intl';
 
-import {Box, Divider, Heading} from '@chakra-ui/react';
+import {Container, Divider, Heading} from '@chakra-ui/react';
 
 import {IMAGE_BASE_URL} from '@config/constants';
 
@@ -29,7 +29,7 @@ const ProjectDetail: React.FC<Project> = ({
   }));
 
   return (
-    <Box as='section'>
+    <Container as='section'>
       <ProjectHeader
         demo={demo}
         url={url}
@@ -43,7 +43,7 @@ const ProjectDetail: React.FC<Project> = ({
       </Heading>
       <Divider mb={8} />
       <ProjectImages images={images} />
-    </Box>
+    </Container>
   );
 };
 

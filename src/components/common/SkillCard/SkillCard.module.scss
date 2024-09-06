@@ -1,0 +1,29 @@
+.box {
+  background-color: var(--background-color);
+  border-radius: 16px;
+  border-width: 1px;
+  box-shadow: var(--shadow-color);
+  color: var(--text-color);
+  height: 100%;
+  padding: var(--padding-background);
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: var(--shadow-header-color);
+    transform: scale(0.9);
+  }
+}
+
+.vstack {
+  align-items: center;
+  gap: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.875rem;
+}

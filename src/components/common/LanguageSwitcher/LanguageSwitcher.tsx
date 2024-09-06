@@ -29,7 +29,12 @@ const LanguageSwitcher: React.FC = () => {
 
   return (
     <Menu>
-      <MenuButton as={Button} variant='ghost' className={styles.menuButton}>
+      <MenuButton
+        as={Button}
+        variant='ghost'
+        className={styles.menuButton}
+        style={{padding: '0 1rem'}}
+      >
         {languages
           .find(lang => lang.code === currentLanguage)
           ?.shortLabel.toUpperCase()}

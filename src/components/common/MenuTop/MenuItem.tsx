@@ -2,7 +2,7 @@
 
 import {usePathname} from 'next/navigation';
 
-import classNames from 'classnames'; // Импортируем classnames
+import classNames from 'classnames';
 
 import {useTranslations} from 'next-intl';
 

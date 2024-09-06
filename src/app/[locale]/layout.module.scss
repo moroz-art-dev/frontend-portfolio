@@ -9,7 +9,10 @@
   position: relative;
 
   .main {
+    display: flex;
+    flex-direction: column;
     height: calc(100% - var(--height-header));
+    justify-content: space-between;
     max-height: calc(100% - var(--height-header));
     opacity: 0;
     overflow-y: auto;
@@ -17,9 +20,5 @@
     transition:
       opacity 0.5s ease-in-out,
       transform 0.5s ease-in-out;
-
-    .container {
-      height: auto;
-    }
   }
 }
