@@ -1,20 +1,25 @@
 .menuItem {
   align-items: center;
+  border-radius: 1rem;
   display: flex;
   font-family: var(--font-alternate);
   font-weight: 400;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   place-content: center flex-end;
   position: relative;
   text-transform: uppercase;
   transition: background-color 0.7s ease;
 
   &:hover {
+    color: var(--button-color);
     text-decoration: none;
   }
 
   &.active {
-    color: var(--link-color);
+    background: var(--button-color);
+    color: var(--primary-color);
     cursor: default;
   }
 }
