@@ -20,13 +20,16 @@
 }
 
 .text {
+  font-family: var(--font-alternate);
   font-size: 1rem;
   font-weight: bold;
 }
 
 .description {
+  font-family: var(--font-code);
   font-size: 0.8rem;
   max-height: 58px;
   min-height: 58px;
   overflow: hidden;
+  text-align: center;
 }
