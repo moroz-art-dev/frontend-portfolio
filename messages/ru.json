@@ -36,7 +36,12 @@
     "metaDescription": "Ознакомьтесь с технологиями и инструментами, используемыми фронтенд-инженером."
   },
   "Loader": {
-    "default": "Загрузка..."
+    "default": "Загрузка...",
+    "loadingProjects": "Загрузка проектов...",
+    "loadingSkills": "Загрузка навыков...",
+    "loadingDetails": "Загрузка деталей...",
+    "loadingCertificates": "Загрузка сертификатов...",
+    "loadingExpertise": "Загрузка экспертизы..."
   },
   "ProjectsText": {
     "titlePet": "Проекты Разработки",

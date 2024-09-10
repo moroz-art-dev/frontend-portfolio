@@ -12,7 +12,7 @@ export const withProjects = <P extends ProjectApiResponse>(
     const {data, loading, error} =
       useApiData<ProjectApiResponse>('/api/projects');
 
-    if (loading) return <Loader text='Loading projects...' />;
+    if (loading) return <Loader text='loadingProjects' />;
     if (error) return <div>Error: {error}</div>;
     if (!data || data.list.length === 0)
       return <div>No projects available</div>;

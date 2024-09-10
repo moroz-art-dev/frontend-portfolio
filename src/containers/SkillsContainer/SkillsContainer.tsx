@@ -11,7 +11,7 @@ import {SkillApiResponse} from '@/types/skill';
 const SkillsContainer: React.FC = () => {
   const {data, loading, error} = useApiData<SkillApiResponse>('/api/stack');
 
-  if (loading) return <Loader text='Loading skills...' />;
+  if (loading) return <Loader text='loadingSkills' />;
 
   if (error) return <div>Error: {error}</div>;
 

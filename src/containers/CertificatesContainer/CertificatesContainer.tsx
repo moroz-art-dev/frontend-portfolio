@@ -14,7 +14,7 @@ export const withCertificates = <P extends CertificateApiResponse>(
     const {data, loading, error} =
       useApiData<CertificateApiResponse>('/api/certificates');
 
-    if (loading) return <Loader text='Loading certificates...' />;
+    if (loading) return <Loader text='loadingCertificates' />;
     if (error) return <div>Error: {error}</div>;
     if (!data || data.list.length === 0)
       return <div>No certificates available</div>;

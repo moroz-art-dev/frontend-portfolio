@@ -39,7 +39,7 @@ const LazyLoadBlock = ({children}: LazyLoadBlockProps) => {
 
   return (
     <Box ref={ref} className={styles.lazyLoadBlock}>
-      {isVisible ? children : <Loader text='Loading...' />}
+      {isVisible ? children : <Loader text='default' />}
     </Box>
   );
 };

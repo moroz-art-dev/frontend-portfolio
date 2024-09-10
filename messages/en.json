@@ -37,8 +37,11 @@
   },
   "Loader": {
     "default": "Loading...",
-    "loadingProjects": "Loading...",
-    "loadingSkills": "Loading..."
+    "loadingProjects": "Loading projects...",
+    "loadingSkills": "Loading skills...",
+    "loadingDetails": "Loading details...",
+    "loadingCertificates": "Loading certificates...",
+    "loadingExpertise": "Loading expertise..."
   },
   "ProjectsText": {
     "titlePet": "Development Projects",

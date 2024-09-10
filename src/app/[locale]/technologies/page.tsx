@@ -15,13 +15,13 @@ const ExpertiseWithData = dynamic(
     ),
   {
     ssr: false,
-    loading: () => <Loader text='Loading Expertise...' />,
+    loading: () => <Loader text='loadingExpertise' />,
   }
 );
 
 const SkillsContainer = dynamic(() => import('@containers/SkillsContainer'), {
   ssr: false,
-  loading: () => <Loader text='Loading Skills...' />,
+  loading: () => <Loader text='loadingSkills' />,
 });
 
 function ExpertisePage() {
