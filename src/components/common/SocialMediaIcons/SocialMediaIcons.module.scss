@@ -1,6 +1,11 @@
 .iconButton {
   border: 2px solid;
+  border-color: var(--info-color);
   transition: color 0.3s ease;
+
+  &:hover {
+    border-color: var(--info-hover-color);
+  }
 
   svg {
     font-size: 1.3rem;

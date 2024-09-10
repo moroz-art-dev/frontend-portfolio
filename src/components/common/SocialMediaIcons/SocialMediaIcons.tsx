@@ -7,7 +7,7 @@ import styles from './SocialMediaIcons.module.scss';
 const SocialMediaIcons = () => {
   return (
     <Flex gap={4}>
-      {socialMediaLinks.map(({href, ariaLabel, icon: Icon}, index) => (
+      {socialMediaLinks.map(({href, ariaLabel, icon: Icon, color}, index) => (
         <Tooltip key={index} label={ariaLabel}>
           <IconButton
             variant='solid'
@@ -17,6 +17,8 @@ const SocialMediaIcons = () => {
             icon={<Icon />}
             className={styles.iconButton}
             target='_blank'
+            background={color}
+            color={'white'}
             borderRadius='50%'
           />
         </Tooltip>
