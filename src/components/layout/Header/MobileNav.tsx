@@ -1,3 +1,5 @@
+import {FaBars} from 'react-icons/fa';
+
 import {
   Button,
   Divider,
@@ -24,7 +26,9 @@ const MobileNav: React.FC<MobileNavProps> = ({items}) => {
 
   return (
     <Flex as='nav'>
-      <Button onClick={onOpen}>Menu</Button>
+      <Button onClick={onOpen} fontSize={'1.25rem'}>
+        <FaBars />
+      </Button>
       <Drawer placement='top' onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay>
           <DrawerContent>

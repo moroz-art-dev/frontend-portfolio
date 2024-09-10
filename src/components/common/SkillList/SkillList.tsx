@@ -19,10 +19,11 @@ const SkillList: React.FC<SkillListProps> = ({skills}) => {
         flexDirection='row'
         alignItems='flexStart'
         flexWrap='wrap'
-        style={{justifyContent: 'space-evenly'}}
+        style={{justifyContent: 'center'}}
       >
         {skills.map((skill, index) => (
           <SkillCard
+            index={index}
             key={index}
             title={skill.title}
             descriptionKey={skill.descriptionKey}
