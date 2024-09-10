@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "greetingTitle": "Hi, everyone!",
-    "intro": "My name is Artem Moroz, and I am a frontend engineer with over 10 years of experience in web development, focusing on React applications for the past four years.",
+    "intro": "My name is Artem Moroz, and I am a frontend engineer with extensive experience in web development, specializing in React applications.",
     "explore": "Here you can explore some of my pet projects, view my certifications, check out my skills and experience, and get to know me better to understand if you are interested in collaborating with me.",
     "social": "You can also connect with me on Telegram and LinkedIn.",
     "skillsTitle": "Main Stack",
@@ -42,8 +42,8 @@
   },
   "ProjectsText": {
     "titlePet": "Development Projects",
-    "intro": "I have many years of experience in commercial development, where I have gained deep knowledge and skills in creating modern web solutions. Early in my career, I worked at Step2use, where my main task was to develop e-commerce websites. This formed the foundation for my transition to more complex web applications and innovative products.",
-    "experience": "I have experience working in a large team on the MaxiBlocks product, where we developed a block builder plugin for WordPress. I also worked at GetWin on the prof.world product — a large, evolving project that will become a portal for companies engaged in candidate management.",
+    "intro": "I began my career in the e-commerce sector, where I worked for many years, gaining extensive experience in all aspects of development. I was responsible for creating responsive interfaces, integrating and configuring payment systems, developing modules of varying complexity, API integration, as well as setting up import and export processes for products. Additionally, I focused on performance optimization, implementing analytical metrics, and ensuring effective communication with clients. Moreover, I managed projects as a team lead, ensuring their successful execution.",
+    "experience": "Recently, I have collaborated with a team on the MaxiBlocks project. I have also worked with GetWin on the prof.world product — a large, dynamic project evolving into a portal for companies specializing in candidate recruitment and management.",
     "support": "From time to time, I also take on small tasks and provide support for older projects, ensuring their stability and relevance.",
     "petProjects": "Below you can explore some of my pet projects that were built from scratch. In these projects, I actively study and test new technologies and approaches, demonstrating my technical skills and innovative mindset.",
     "metaTitle": "Projects",

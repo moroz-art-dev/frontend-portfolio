@@ -1,6 +1,6 @@
 import {useTranslations} from 'next-intl';
 
-import {Box, Text, VStack} from '@chakra-ui/react';
+import {Box, Text, Tooltip, VStack} from '@chakra-ui/react';
 
 import IconRenderer from '@components/common/IconRenderer';
 
@@ -14,11 +14,15 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({title, descriptionKey}) => {
   const t = useTranslations('Skills');
   return (
-    <Box className={styles.box} width={['100%', '45%', '30%', '18%']}>
+    <Box className={styles.box} width={['46%', '46%', '30%', '18%']}>
       <VStack spacing={3} className={styles.vstack}>
         <IconRenderer name={title} size={40} />
         <Text className={styles.text}>{title}</Text>
-        <Text className={styles.description}>{t(descriptionKey)}</Text>
+        <Tooltip label={t(descriptionKey)}>
+          <Text className={styles.description} display={['none', 'block']}>
+            {t(descriptionKey)}
+          </Text>
+        </Tooltip>
       </VStack>
     </Box>
   );
