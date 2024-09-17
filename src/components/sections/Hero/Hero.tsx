@@ -10,7 +10,9 @@ import {
   VStack,
 } from '@chakra-ui/react';
 
+import Categories from '@components/common/Categories';
 import SkillList from '@components/common/SkillList';
+import {categories} from '@config/categoriesConfig';
 import {skills} from '@config/skillsConfig';
 
 import styles from './Hero.module.scss';
@@ -61,8 +63,11 @@ const Hero: React.FC = () => {
             </VStack>
           </GridItem>
         </Grid>
-
         <SkillList skills={skills} />
+        <Box mt={10}>
+          <Text className={styles.text}>{t('aboutTechnologies')}</Text>
+        </Box>
+        <Categories categories={categories} />
       </Container>
     </>
   );

@@ -1,0 +1,39 @@
+.box {
+  background-color: var(--info-color);
+  border-radius: 16px;
+  border-width: 1px;
+  box-shadow: var(--shadow-color);
+  color: var(--text-color);
+  height: 100%;
+  padding: 1rem;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: var(--shadow-header-color);
+    transform: scale(0.9);
+  }
+}
+
+.stack {
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 40px;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.text {
+  font-family: var(--font-alternate);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: var(--font-code);
+  font-size: 0.8rem;
+  max-height: 58px;
+  min-height: 58px;
+  overflow: hidden;
+  text-align: center;
+}

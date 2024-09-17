@@ -2,20 +2,21 @@ import {useTranslations} from 'next-intl';
 
 import {Box, Stack} from '@chakra-ui/react';
 
+import CategoriesItem from '@components/common/CategoriesItem';
 import SectionHeader from '@components/common/SectionHeader';
-import SkillCard from '@components/common/SkillCard';
 
-interface Skill {
+interface Category {
   title: string;
   descriptionKey: string;
+  url: string;
 }
 
-interface SkillListProps {
-  skills: Skill[];
+interface CategoriesProps {
+  categories: Category[];
 }
 
-const SkillList: React.FC<SkillListProps> = ({skills}) => {
-  const t = useTranslations('Skills');
+const Categories: React.FC<CategoriesProps> = ({categories}) => {
+  const t = useTranslations('Categories');
   return (
     <Box overflowX='auto'>
       <SectionHeader text={t('title')} />
@@ -26,12 +27,13 @@ const SkillList: React.FC<SkillListProps> = ({skills}) => {
         flexWrap='wrap'
         style={{justifyContent: 'center'}}
       >
-        {skills.map((skill, index) => (
-          <SkillCard
+        {categories.map((category, index) => (
+          <CategoriesItem
+            key={category.title}
+            title={category.title}
+            descriptionKey={category.descriptionKey}
+            url={category.url}
             index={index}
-            key={index}
-            title={skill.title}
-            descriptionKey={skill.descriptionKey}
           />
         ))}
       </Stack>
@@ -39,4 +41,4 @@ const SkillList: React.FC<SkillListProps> = ({skills}) => {
   );
 };
 
-export default SkillList;
+export default Categories;

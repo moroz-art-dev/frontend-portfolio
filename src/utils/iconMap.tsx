@@ -6,8 +6,11 @@ import {
   FaCss3Alt,
   FaHtml5,
   FaOpencart,
+  FaProjectDiagram,
   FaReact,
+  FaTools,
 } from 'react-icons/fa';
+import {HiOutlineBriefcase} from 'react-icons/hi';
 import {IoLogoJavascript} from 'react-icons/io';
 import {
   SiAdobephotoshop,
@@ -81,6 +84,9 @@ const reactIconMap: {[key: string]: React.ReactNode} = {
   OpenCart: <FaOpencart />,
   Joomla: <SiJoomla />,
   Certificate: <FaCertificate />,
+  certificates: <HiOutlineBriefcase />,
+  projects: <FaProjectDiagram />,
+  technologies: <FaTools />,
 };
 
 const getIcon = (
