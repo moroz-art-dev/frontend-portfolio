@@ -11,6 +11,7 @@ export const socialMediaLinks = [
     icon: FaEnvelope,
     text: 'moroz.art.dev@gmail.com',
     color: '#D44638',
+    colorHover: '#C13515',
   },
   {
     href: 'https://linkedin.com/in/moroz-art-dev',
@@ -18,6 +19,7 @@ export const socialMediaLinks = [
     icon: FaLinkedinIn,
     text: 'linkedin.com/in/moroz-art-dev',
     color: '#0077B5',
+    colorHover: '#005582',
   },
   {
     href: 'https://t.me/ArtDecember',
@@ -25,6 +27,7 @@ export const socialMediaLinks = [
     icon: FaTelegramPlane,
     text: '@ArtDecember',
     color: '#0088cc',
+    colorHover: '#0077b5',
   },
   {
     href: 'https://github.com/moroz-art-dev',
@@ -32,6 +35,7 @@ export const socialMediaLinks = [
     icon: FiGithub,
     text: 'github.com/moroz-art-dev',
     color: '#181717',
+    colorHover: '#333333',
   },
   {
     href: 'https://raw.githubusercontent.com/moroz-art-dev/materials/main/cv/CV_Artem_Moroz.pdf',
@@ -39,6 +43,7 @@ export const socialMediaLinks = [
     icon: MdOutlineDescription,
     text: 'CV_Artem_Moroz.pdf',
     color: '#2ECC71',
+    colorHover: '#27AE60',
   },
 ];
 
@@ -49,6 +54,7 @@ export const additionalMediaLinks = [
     icon: SiCoursera,
     text: '',
     color: '#0056D2',
+    colorHover: '#0047B2',
   },
   {
     href: 'https://codewars.com',
@@ -56,5 +62,6 @@ export const additionalMediaLinks = [
     icon: SiCodewars,
     text: '',
     color: '#B1361E',
+    colorHover: '#992C1A',
   },
 ];
