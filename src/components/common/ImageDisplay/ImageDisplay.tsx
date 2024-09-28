@@ -26,7 +26,7 @@ const ImageDisplay: React.FC<{list: Certificate[]}> = ({list}) => {
         title={list[activeIndex].name[locale]}
         className={styles.image}
       />
-      <Text>{list[activeIndex].name[locale]}</Text>
+      <Text className={styles.text}>{list[activeIndex].name[locale]}</Text>
     </>
   );
 };

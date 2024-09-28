@@ -4,3 +4,12 @@
   max-width: 100%;
   width: 500px;
 }
+
+.text {
+  background: var(--info-color);
+  border-radius: var(--chakra-radii-lg);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 100%;
+}

@@ -1,4 +1,15 @@
-@import 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap';
+@font-face {
+  font-display: swap;
+  font-family: 'Styrene A Web';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/StyreneAWeb-Regular.eot');
+  src:
+    url('/fonts/StyreneAWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/StyreneAWeb-Regular.woff2') format('woff2'),
+    url('/fonts/StyreneAWeb-Regular.woff') format('woff'),
+    url('/fonts/StyreneAWeb-Regular.ttf') format('truetype');
+}
 
 * {
   box-sizing: border-box;

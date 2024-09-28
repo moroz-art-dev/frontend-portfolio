@@ -2,6 +2,7 @@
 import path from 'path';
 import {fileURLToPath} from 'url';
 
+import withBundleAnalyzer from '@next/bundle-analyzer';
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin();
@@ -32,8 +33,15 @@ const nextConfig = {
       '@types': path.resolve(__dirname, 'types'),
       '@styles': path.resolve(__dirname, 'styles'),
     };
+    config.module.rules.push({
+      test: /\.(png|jpe?g|gif|svg)$/,
+      include: [path.resolve(__dirname, 'screenshots')],
+      use: 'null-loader',
+    });
+
     return config;
   },
 };
-
-export default withNextIntl(nextConfig);
+export default withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+})(withNextIntl(nextConfig));

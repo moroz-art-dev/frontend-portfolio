@@ -1,62 +1,43 @@
 'use client';
-import {
-  Lora,
-  Montserrat_Alternates,
-  Poppins,
-  Roboto,
-  Source_Code_Pro,
-} from 'next/font/google';
+import {Montserrat, Nunito, Source_Code_Pro} from 'next/font/google';
 import {createContext, ReactNode, useContext} from 'react';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-});
-
-const roboto = Roboto({
-  subsets: ['latin'],
+const nunito = Nunito({
+  subsets: ['latin', 'cyrillic'],
   weight: ['300', '400', '500'],
 });
 
-const lora = Lora({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-});
-
-const montserratAlternates = Montserrat_Alternates({
-  subsets: ['latin'],
-  weight: ['200', '400', '600'],
+const montserrat = Montserrat({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['300', '400', '500'],
 });
 
 const sourceCodePro = Source_Code_Pro({
-  subsets: ['latin'],
+  subsets: ['latin', 'cyrillic'],
   weight: ['400', '500', '700'],
 });
 
 interface FontContextType {
   headingFont: string;
   bodyFont: string;
-  specialFont: string;
   alternateFont: string;
   codeFont: string;
 }
 
 const FontContext = createContext<FontContextType>({
-  headingFont: poppins.style.fontFamily.split(',')[0].trim(),
-  bodyFont: roboto.style.fontFamily.split(',')[0].trim(),
-  specialFont: lora.style.fontFamily.split(',')[0].trim(),
-  alternateFont: montserratAlternates.style.fontFamily.split(',')[0].trim(),
+  headingFont: montserrat.style.fontFamily.split(',')[0].trim(),
+  bodyFont: nunito.style.fontFamily.split(',')[0].trim(),
   codeFont: sourceCodePro.style.fontFamily.split(',')[0].trim(),
+  alternateFont: 'Styrene A Web',
 });
 
 export const FontProvider: React.FC<{children: ReactNode}> = ({children}) => {
   return (
     <FontContext.Provider
       value={{
-        headingFont: poppins.style.fontFamily,
-        bodyFont: roboto.style.fontFamily,
-        specialFont: lora.style.fontFamily,
-        alternateFont: montserratAlternates.style.fontFamily,
+        headingFont: montserrat.style.fontFamily,
+        bodyFont: nunito.style.fontFamily,
+        alternateFont: 'Styrene A Web',
         codeFont: sourceCodePro.style.fontFamily,
       }}
     >

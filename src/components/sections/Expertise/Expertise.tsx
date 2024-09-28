@@ -34,7 +34,7 @@ const Expertise: React.FC<CertificateApiResponse> = ({list}) => {
         justify='space-between'
         align='start'
         flexWrap='wrap'
-        gap={2}
+        gap={4}
         my={8}
       >
         <Box className={styles.listWrapper}>

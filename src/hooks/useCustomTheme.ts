@@ -22,8 +22,7 @@ export const config: ThemeConfig = {
 };
 
 export const useCustomTheme = () => {
-  const {headingFont, bodyFont, specialFont, alternateFont, codeFont} =
-    useFont();
+  const {headingFont, bodyFont, alternateFont, codeFont} = useFont();
 
   console.log('t', headingFont);
 
@@ -40,7 +39,6 @@ export const useCustomTheme = () => {
     fonts: {
       heading: headingFont,
       body: bodyFont,
-      special: specialFont,
       alternate: alternateFont,
       code: codeFont,
     },
@@ -75,7 +73,6 @@ export const useCustomTheme = () => {
             '--height-header': sizes.headerHeight,
             '--font-heading': headingFont,
             '--font-body': bodyFont,
-            '--font-special': specialFont,
             '--font-alternate': alternateFont,
             '--font-code': codeFont,
           },
@@ -84,8 +81,8 @@ export const useCustomTheme = () => {
             color: currentColors.text,
             fontFamily: props.theme.fonts.body,
             fontSize: {
-              base: '14px',
-              md: '14px',
+              base: '16px',
+              md: '16px',
               lg: '16px',
               xl: '18px',
             },
